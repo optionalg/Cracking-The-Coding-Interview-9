@@ -75,13 +75,6 @@ class BST:
 	def __str__(self):
 		return "nodes: {}".format(self.inorder)
 			
-def subTree(smallerBST, biggerBST):
-	inorderSmaller = smallerBST.inorder
-	inorderBigger = biggerBST.inorder
-	if set(inorderSmaller) < set(inorderBigger):
-		return True
-	else:
-		return False
 
 bst = BST(7)
 bst.add(8)
@@ -94,5 +87,3 @@ bstB.add(8)
 bstB.inorderTraversal(8)
 
 print bst.search(8)
-
-# print subTree(bst, bstB)
